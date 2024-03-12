@@ -40,7 +40,7 @@ connection.connect((err) => {
           mdContent += `| ${row.CustID} | ${row.Name} |\n`;
         });
 
-        fs.writeFile('output.md', mdContent, (err) => {
+        fs.writeFile('README.md', mdContent, (err) => {
           if (err) throw err;
           console.log('The file has been saved!');
         });
